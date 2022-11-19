@@ -1,0 +1,4 @@
+//Get Last patient ID inserted into the database
+                   SqlCommand lastEntry = new SqlCommand("SELECT TOP 1 pat_ID FROM Patient ORDER BY pat_ID DESC;",conn);
+                   SqlDataReader last = lastEntry.ExecuteReader();
+ last.Close();

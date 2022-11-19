@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDCCE1F6-A720-49D8-92A2-459852FEF3B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WindowsFormsApp1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPatient.designer.cs">
+      <DependentUpon>AddPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePatient.Designer.cs">
+      <DependentUpon>DeletePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddApointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddApointments.Designer.cs">
+      <DependentUpon>AddApointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAppointment.designer.cs">
+      <DependentUpon>DeleteAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWst5DataSet.cs">
+      <DependentUpon>GroupWst5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientPayment.Designer.cs">
+      <DependentUpon>PatientPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWst5DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupWst5DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GroupWst5DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GroupWst5DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update.designer.cs">
+      <DependentUpon>Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAppointment.designer.cs">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePatientPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePatientPayment.Designer.cs">
+      <DependentUpon>updatePatientPayment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPatient.resx">
+      <DependentUpon>AddPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePatient.resx">
+      <DependentUpon>DeletePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddApointments.resx">
+      <DependentUpon>AddApointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAppointment.resx">
+      <DependentUpon>DeleteAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientPayment.resx">
+      <DependentUpon>PatientPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Update.resx">
+      <DependentUpon>Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAppointment.resx">
+      <DependentUpon>UpdateAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePatientPayment.resx">
+      <DependentUpon>updatePatientPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="GroupWst5DataSet.xsc">
+      <DependentUpon>GroupWst5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupWst5DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupWst5DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupWst5DataSet.xss">
+      <DependentUpon>GroupWst5DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GroupWst5DataSet1.xsc">
+      <DependentUpon>GroupWst5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="GroupWst5DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GroupWst5DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GroupWst5DataSet1.xss">
+      <DependentUpon>GroupWst5DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\4c7605be4392e71182c7008da6063e52.gif" />
+    <None Include="Resources\LoginPicture2.jpg" />
+    <None Include="Resources\istockphoto-532399194-612x6121.jpg" />
+    <None Include="Resources\4c7605be4392e71182c7008da6063e521.gif" />
+    <Content Include="Resources\black-solid-icon-boy-patient-boy-patient-logo-pills-medical-black-solid-icon-boy-patient-pills-medical-147675883.jpg" />
+    <None Include="Resources\black-solid-icon-boy-patient-boy-patient-logo-pills-medical-black-solid-icon-boy-patient-pills-medical-1476758831.jpg" />
+    <Content Include="Resources\cee0fc2838197c1e64c8bb17046c5d25.jpg" />
+    <None Include="Resources\cee0fc2838197c1e64c8bb17046c5d251.jpg" />
+    <Content Include="Resources\close.jpg" />
+    <None Include="Resources\close1.jpg" />
+    <Content Include="Resources\istockphoto-532399194-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
